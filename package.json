@@ -1,0 +1,28 @@
+{
+  "name": "torii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "lint:lp": "cd lp && npm run lint",
+    "lint:api": "cd api && npm run lint",
+    "lint:gym": "cd gym && npm run lint",
+    "lint:user": "cd user && npm run lint",
+    "lint": "concurrently \"npm run lint:lp\" \"npm run lint:api\" \"npm run lint:gym\" \"npm run lint:user\"",
+    "dev:lp": "cd lp && npm run dev",
+    "dev:api": "cd api && npm run dev",
+    "dev:gym": "cd gym && npm run dev",
+    "dev:user": "cd user && npm run dev",
+    "dev": "concurrently \"npm run dev:lp\" \"npm run dev:api\" \"npm run dev:gym\" \"npm run dev:user\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryosuke-horie/Torii.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
