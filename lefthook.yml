@@ -1,0 +1,15 @@
+pre-commit:
+  parallel: true
+  jobs:
+    lp-lint:
+      root: "lp"
+      run: npm run lint
+    api-lint:
+      root: "api"
+      run: npm run lint
+    gym-lint:
+      root: "gym"
+      run: npm run lint
+    user-lint:
+      root: "user"
+      run: npm run lint

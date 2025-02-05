@@ -1,0 +1,12 @@
+[tools]
+lefthook = "latest"
+
+[env]
+LEFTHOOK = "1"
+
+[tasks.setup]
+description = "Setup development environment"
+run = """
+npm install -g lefthook
+lefthook install
+"""
