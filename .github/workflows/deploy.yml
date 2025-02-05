@@ -16,8 +16,10 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+        working-directory: ./lp
       - name: Deploy
         run: npm run deploy
+        working-directory: ./lp
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -30,7 +32,9 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+        working-directory: ./api
       - run: npm run deploy
+        working-directory: ./api
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -43,8 +47,10 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+        working-directory: ./gym
       - name: Deploy
         run: npm run deploy
+        working-directory: ./gym
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -57,8 +63,10 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+        working-directory: ./user
       - name: Deploy
         run: npm run deploy
+        working-directory: ./user
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
