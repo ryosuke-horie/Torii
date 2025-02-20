@@ -1,0 +1,8 @@
+name = "torii-api"
+main = "src/index.ts"
+compatibility_date = "2025-02-04"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "torii-db"
+database_id = "4c107ead-8f2b-4791-be6f-0c274e3bb6e4"
