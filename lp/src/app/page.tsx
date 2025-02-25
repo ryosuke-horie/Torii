@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-50 to-white dark:from-gray-900 dark:to-black">
+    <div className="min-h-screen bg-linear-to-b from-red-50 to-white dark:from-gray-900 dark:to-black">
       <Header />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <main className="pt-20 pb-16">

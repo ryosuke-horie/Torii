@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 
 export default function Terms() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-50 to-white dark:from-gray-900 dark:to-black">
+    <div className="min-h-screen bg-linear-to-b from-red-50 to-white dark:from-gray-900 dark:to-black">
       <Header />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
