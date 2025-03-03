@@ -21,7 +21,7 @@
     "@cloudflare/next-on-pages": "^1.13.8",
     "@cloudflare/workers-types": "^4.20250204.0",
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4.0.8",
+    "@tailwindcss/postcss": "^4.0.9",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
